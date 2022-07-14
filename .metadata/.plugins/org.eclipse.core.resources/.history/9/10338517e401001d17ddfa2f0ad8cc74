@@ -1,0 +1,5 @@
+package com.virtusa.bankingapp.dao;
+
+public class CustomerImpl implements CustomerFacade{
+
+}

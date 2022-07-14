@@ -1,0 +1,14 @@
+package com.virtusa.bankingapp.dao;
+
+import java.util.stream.Stream;
+
+import com.virtusa.bankingapp.models.Customer;
+
+public class CustomerDataSource {
+
+	private static List<Customer> customers=new ArrayList<Customer>();
+	
+	public static Stream<Customer> getCustomers(){
+		
+	}
+}

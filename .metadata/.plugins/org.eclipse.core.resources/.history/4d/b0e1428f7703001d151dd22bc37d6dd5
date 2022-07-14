@@ -1,0 +1,6 @@
+package com.virtusa.bankingapi.controllers;
+
+@RestController
+public class BankController {
+
+}

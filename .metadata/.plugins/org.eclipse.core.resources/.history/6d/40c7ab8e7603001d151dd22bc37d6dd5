@@ -1,0 +1,12 @@
+package com.virtusa.bankingapi.services;
+
+import org.springframework.stereotype.Service;
+
+import com.virtusa.bankingapi.repositories.TraderRepository;
+
+@Service
+public class TraderService {
+	@Autowired
+	private TraderRepository traderRepository;
+
+}

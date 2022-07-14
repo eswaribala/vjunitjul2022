@@ -1,0 +1,7 @@
+package com.virtusa.bankingapp.dao;
+
+public class CustomerFacadeTest {
+	private CustomerFacade customerFacade;
+	
+
+}

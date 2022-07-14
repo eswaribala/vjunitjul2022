@@ -1,0 +1,21 @@
+package com.virtusa.bankingapi.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.virtusa.bankingapi.models.Bank;
+import com.virtusa.bankingapi.repositories.BankRepository;
+
+@Service
+public class BankService {
+    @Autowired 
+	private BankRepository bankRepository; 
+    
+    //crud
+    
+    public Bank addBank(Bank bank) {
+    	return this.bankRepository.save(bank);
+    }
+    
+	
+}

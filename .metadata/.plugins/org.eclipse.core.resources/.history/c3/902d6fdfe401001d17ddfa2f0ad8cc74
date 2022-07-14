@@ -1,0 +1,39 @@
+package com.virtusa.bankingapp.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.virtusa.bankingapp.models.Customer;
+
+import lombok.Data;
+@Data
+public class CustomerImpl implements CustomerFacade{
+	
+	private List<Customer> customers;
+	
+	public CustomerImpl() {
+		customers=new ArrayList<Customer>();
+	}
+
+	@Override
+	public long addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		customers.add(customer);
+		return customer.getCustomerId();
+	}
+
+	@Override
+	public List<Customer> getAllCustomers() {
+		// TODO Auto-generated method stub
+		return customers;
+	}
+
+	@Override
+	public String getCustomerById(long customerId) {
+		// TODO Auto-generated method stub
+		return customers.stream().filter(cust->cust.getCustomerId() == customerId)
+		.map(cust->cust.getFirstName()).findFirst().orElse(null);
+		
+	}
+
+}

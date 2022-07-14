@@ -1,0 +1,5 @@
+package com.virtusa.bankingapi.models;
+
+public class Trader {
+
+}

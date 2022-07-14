@@ -1,0 +1,5 @@
+package com.virtusa.bankingapi.repositories;
+
+public interface TraderRepository extends JpaRepository<Trader,Long>{
+
+}

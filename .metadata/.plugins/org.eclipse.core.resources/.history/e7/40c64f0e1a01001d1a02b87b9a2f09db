@@ -1,0 +1,14 @@
+package com.virtusa.bankingapp.models;
+
+import java.time.LocalDate;
+
+public class Customer {
+	
+	private long customerId;
+	private String firstName;
+	private String lastName;
+	private LocalDate dob;
+	private boolean status;
+	
+
+}

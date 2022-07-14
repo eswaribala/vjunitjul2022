@@ -1,0 +1,4 @@
+# Created at 2022-07-12T18:33:09.905
+Boot Manifest-JAR contains absolute paths in classpath 'F:\junittrainingjul2022ws\bankingapp\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

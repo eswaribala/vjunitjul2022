@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="16.0.2" class="java.beans.XMLDecoder">
+ <object class="com.synopsys.desktop.eclipse.services.StateServiceImpl$CombinedPersistentState" id="StateServiceImpl$CombinedPersistentState0">
+  <void class="com.synopsys.desktop.eclipse.services.StateServiceImpl$CombinedPersistentState" method="getField">
+   <string>issuesState</string>
+   <void method="set">
+    <object idref="StateServiceImpl$CombinedPersistentState0"/>
+    <object class="com.synopsys.desktop.core.models.issues.PersistentState" id="PersistentState0">
+     <void class="com.synopsys.desktop.core.models.issues.PersistentState" method="getField">
+      <string>version</string>
+      <void method="set">
+       <object idref="PersistentState0"/>
+       <int>2</int>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void class="com.synopsys.desktop.eclipse.services.StateServiceImpl$CombinedPersistentState" method="getField">
+   <string>scansState</string>
+   <void method="set">
+    <object idref="StateServiceImpl$CombinedPersistentState0"/>
+    <object class="com.synopsys.desktop.core.models.scans.PersistentState" id="PersistentState1">
+     <void class="com.synopsys.desktop.core.models.scans.PersistentState" method="getField">
+      <string>version</string>
+      <void method="set">
+       <object idref="PersistentState1"/>
+       <int>1</int>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+<void class="com.synopsys.desktop.core.models.issues.PersistentState" id="Field0" method="getField">
+ <string>filters</string>
+ <void id="ArrayList0" method="get">
+  <object idref="PersistentState0"/>
+  <void method="add">
+   <object class="com.synopsys.desktop.core.models.issues.PersistentState$Filter" id="PersistentState$Filter0">
+    <void class="com.synopsys.desktop.core.models.issues.PersistentState$Filter" method="getField">
+     <string>filterType</string>
+     <void method="set">
+      <object idref="PersistentState$Filter0"/>
+      <string>Source</string>
+     </void>
+    </void>
+    <void class="com.synopsys.desktop.core.models.issues.PersistentState$Filter" method="getField">
+     <string>filterValue</string>
+     <void method="set">
+      <object idref="PersistentState$Filter0"/>
+      <string>SingleFile</string>
+     </void>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList0"/>
+</java>

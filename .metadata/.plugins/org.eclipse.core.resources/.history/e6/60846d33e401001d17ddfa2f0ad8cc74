@@ -1,0 +1,30 @@
+package com.virtusa.bankingapp.dao;
+
+import java.util.List;
+
+import com.virtusa.bankingapp.models.Customer;
+
+public class CustomerImpl implements CustomerFacade{
+	
+	private List<Customer> customers;
+	
+
+	@Override
+	public long addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Customer> getAllCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer getCustomerById(long customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

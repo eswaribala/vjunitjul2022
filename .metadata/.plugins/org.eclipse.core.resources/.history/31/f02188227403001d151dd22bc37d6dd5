@@ -1,0 +1,11 @@
+package com.virtusa.bankingapi.models;
+
+import javax.persistence.Embedded;
+
+public class Trader {
+	
+	private long traderId;
+	@Embedded
+	private FullName name;
+
+}

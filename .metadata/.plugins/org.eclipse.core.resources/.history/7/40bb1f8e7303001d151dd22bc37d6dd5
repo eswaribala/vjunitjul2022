@@ -1,0 +1,9 @@
+package com.virtusa.bankingapi.models;
+
+@Data
+public class Bank {
+	private long bankCode;
+	private String bankName;
+	
+
+}

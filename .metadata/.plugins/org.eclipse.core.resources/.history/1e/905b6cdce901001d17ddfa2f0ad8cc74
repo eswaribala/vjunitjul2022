@@ -1,0 +1,10 @@
+package com.virtusa.bankingapp;
+
+@SelectPackages({"com.sapient.dao","com.sapient.models"})
+
+@IncludeTags("dev")
+@Suite
+public class AppTestSuite 
+{
+  
+}

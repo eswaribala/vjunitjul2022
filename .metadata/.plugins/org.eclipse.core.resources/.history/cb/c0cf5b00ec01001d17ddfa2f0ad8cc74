@@ -1,0 +1,47 @@
+package com.virtusa.bankingapp;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledOnOs;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
+
+public class EnvironmentTest {
+
+	@Test
+    @EnabledOnOs(OS.MAC)
+    void testOnMacOs() {
+        assertTrue(true);
+    }
+
+    @Test
+    @EnabledOnOs(OS.WINDOWS)
+    void doNotTestOnWindows() {
+        assertTrue(true);
+    }
+    
+    @Test
+    @EnabledOnJre({ JRE.JAVA_17, JRE.JAVA_18 })
+    void onJava17Or18() {
+        assertTrue(true);
+    }
+
+    @Test
+    @DisabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_11)
+    void notFromJava8to11() {
+        assertTrue(true);
+    }
+
+    @Test
+    @EnabledForJreRange(min = JRE.JAVA_12, max = JRE.JAVA_18)
+    void fromJava12to18() {
+        assertTrue(true);
+    }
+
+    @Test
+    @EnabledIfSystemProperty(named = "any.system.property", matches = "value-regex*")
+    public void onlyIfPropertyValueIsFound() {
+        assertTrue(true);
+    }
+}

@@ -1,0 +1,4 @@
+CustomerId,DOB,FirstName,LastName,Status
+23845832,1970-12-02,Parameswari,Bala,TRUE
+23845832,2022-05-01,Parameswari1,Bala1,FALSE
+23845832,2005-07-06,Parameswari2,Bala2,"	TRUE"

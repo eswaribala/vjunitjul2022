@@ -1,0 +1,7 @@
+package com.virtusa.bankingapp.dao;
+
+public interface CustomerFacade {
+	
+	long addCustomer(Customer customer);
+
+}

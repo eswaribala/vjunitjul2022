@@ -1,0 +1,16 @@
+package com.virtusa.bankingapi.models;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+
+import lombok.Data;
+@Data
+@Entity
+@Table(name="Trader")
+public class Trader {
+	
+	private long traderId;
+	@Embedded
+	private FullName name;
+
+}

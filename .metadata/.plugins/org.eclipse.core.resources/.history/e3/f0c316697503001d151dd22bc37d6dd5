@@ -1,0 +1,6 @@
+package com.virtusa.bankingapi.services;
+
+@Service
+public class BankService {
+
+}

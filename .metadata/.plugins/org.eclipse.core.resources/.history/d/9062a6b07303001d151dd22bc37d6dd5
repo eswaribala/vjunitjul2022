@@ -1,0 +1,15 @@
+package com.virtusa.bankingapi.models;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="Bank")
+public class Bank {
+	private long bankCode;
+	private String bankName;
+	
+
+}

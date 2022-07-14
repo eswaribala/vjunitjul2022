@@ -1,0 +1,12 @@
+package com.virtusa.bankingapi.models;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Bank {
+	private long bankCode;
+	private String bankName;
+	
+
+}

@@ -1,0 +1,12 @@
+package com.virtusa.bankingapi.services;
+
+import org.springframework.stereotype.Service;
+
+import com.virtusa.bankingapi.repositories.BankRepository;
+
+@Service
+public class BankService {
+    @Autowired 
+	private BankRepository bankRepository; 
+	
+}
